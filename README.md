@@ -25,7 +25,6 @@
  - NETWORK LAN
  - fixed local IP
 
-
 ### TV
  - LG OLED 4K Smart TV 55 นิ้ว รุ่น OLED55C1
  - NETWORK Wifi 5G
@@ -33,12 +32,16 @@
  
 ** TV กับ PC อยู่ใน Network เดียวกัน
  
+ 
+ 
 ## อ้างอิง
  - [mariotaku/moonlight-tv](https://github.com/mariotaku/moonlight-tv)
  - [webosbrew/dev-manager-desktop](https://github.com/webosbrew/dev-manager-desktop)
  - [moonlight-stream](https://moonlight-stream.org/)
  - [LG's official documentation](http://webostv.developer.lge.com/develop/app-test)
  - [วิธีตั้งค่า IP Address ใน Windows 10 fix ip address](https://www.youtube.com/watch?v=j2YjWZ3WAOk)
+
+
 
 ### สิ่งที่ต้องเตรียม
  1. หา IP ของ PC
@@ -58,6 +61,8 @@
     2.2 ไปที่แถบ CREATE ACCOUNT และกดยืนยันไปเรื่อยๆ จนเสร็จ
 
  3. ติดตั้ง [Geforce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/) 
+
+
 
 # Step by step
 
