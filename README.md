@@ -4,9 +4,6 @@
 
 ### คู่มือสำหรับ webOS หากเป็นค่ายอื่น ใช้ Steamlink หรือ ลง moonlight ได้โดยตรงที่นี่ [moonlight-stream](https://moonlight-stream.org/) Tab client download
 
-## Donate ค่ากาแฟได้นะครับ
-![Donate](https://github.com/hatsadin09/moonlight-thai-installation/blob/main/images/293365266_1234938590582300_2581968306561943988_n%20(1).jpg)
-
 ### หมายเหตุ
  - ใช้ Geforce Experience เป็น host ในการ Steam (ไม่รู้ การ์ดจอ AMD ลงได้ไหม)
  - ***ห้ามปิด PC แต่ปิดจอได้***
@@ -146,3 +143,7 @@
  8. ไปที่ Setting แล้วเลือก Tab Basic setting ตั้งค่า resolution กับ FPS ตามต้องการ (ขึ้นอยู่กับ TV และ ความแรง PC)
 
  9. เสร็จสิ้นเล่นเกมได้
+
+
+## Buy Me a Coffee
+![Donate](https://github.com/hatsadin09/moonlight-thai-installation/blob/main/images/293365266_1234938590582300_2581968306561943988_n%20(1).jpg)
