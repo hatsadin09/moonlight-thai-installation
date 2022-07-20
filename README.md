@@ -1,11 +1,20 @@
 # moonlight-thai-installation
 
+# เดี๋ยวมาลงรูปให้ทีหลัง หรือถ้าใครอยากแก้ไข Pull requests เข้ามาได้เลยครับ
+
+### คู่มือสำหรับ webOS หากเป็นค่ายอื่น ใช้ Steamlink หรือ ลง moonlight ได้โดยตรงที่นี่ [moonlight-stream](https://moonlight-stream.org/) Tab client download
+
 ### หมายเหตุ
+ - ใช้ Geforce Experience เป็น host ในการ Steam (ไม่รู้ การ์ดจอ AMD ลงได้ไหม)
+ - ***ห้ามปิด PC แต่ปิดจอได้***
+ - ***controller ต้องต่อกับ PC***
+ 
  - จัดทำเพื่อสมาชิกกลุ่ม [นักเลงทีวี “Oled Qled Led TV Thailand Community“](https://www.facebook.com/groups/747168688821081) และใช้งานส่วนตัว ไม่ใช้ในเชิงพาณิชย์
  - ผู้จัดทำไม่ได้มีส่วนได้ส่วนเสียกับ [mariotaku/moonlight-tv](https://github.com/mariotaku/moonlight-tv), [webosbrew/dev-manager-desktop](https://github.com/webosbrew/dev-manager-desktop), [moonlight-stream](https://moonlight-stream.org/)
  - ห้ามคัดลอก แก้ไข หรือทำซ้ำ
  - ไม่สามารถแก้ไขปัญหารายบุคคลได้ และไม่รู้ข้อจำกัดของระบบ ว่ารองรับเครื่องไหน หรือไม่รองรับเครื่องไหนบ้าง
  - โปรแกรมที่ใช้เป็น community version คือ กลุ่มคนช่วยกันทำขึ้นมา เป็น opensource ไม่มีค่าใช้จ่าย อันนี้ผู้ใช้ต้องยอมรับความเสี่ยงของ opensource ให้ได้ก่อน คือ จะไม่มีพนักงานมาแก้ไขปัญหาให้ และโปรแกรมอาจจะมีบัคบ้าง หากเป็นกังวลเรื่องความปลอดภัย สามารถตรวจสอบ sourcecode ได้ที link ข้างต้น
+
 
 ## specification ที่ผมใช้ในคู่มือนี้
 
@@ -32,7 +41,7 @@
  - [วิธีตั้งค่า IP Address ใน Windows 10 fix ip address](https://www.youtube.com/watch?v=j2YjWZ3WAOk)
 
 ### สิ่งที่ต้องเตรียม
- 1. หากต้องการ fix ip ให้หา NetworkID ไว้ (ip 3 ชุดแรก) (ทำหรือไม่ทำก็ได้)
+ 1. หา IP ของ PC
  
     1.1 พิม `cmd` ในช่องค้นหาใน PC แล้ว enter
     
@@ -40,13 +49,15 @@
     
     1.3 หา network connection ที่ใช้อยู่ ปกติจะเป็น 192.168.1.x หรือ 192.168.2.x
     
-    1.4 จดไว้
+    1.4 จด IP ของ PC ไว้
  
  2. นำ Account LG ของเรา ไปสมัครเป็น Developer [อ่านแบบละเอียด](https://webostv.developer.lge.com/develop/app-test/preparing-account/)
     
     2.1 [https://webostv.developer.lge.com/login](https://webostv.developer.lge.com/login) login เว็บนี้
     
     2.2 ไปที่แถบ CREATE ACCOUNT และกดยืนยันไปเรื่อยๆ จนเสร็จ
+
+ 3. ติดตั้ง [Geforce Experience](https://www.nvidia.com/en-us/geforce/geforce-experience/) 
 
 # Step by step
 
@@ -78,15 +89,21 @@
 
 ### ติดตั้ง Dev app บน LG TV
 
+[เพิ่มเติม](https://webostv.developer.lge.com/develop/app-test/using-devmode-app/)
+
  1. login ด้วย LG account ที่สมัครเป็น developer ข้างต้น
  
  2. ค้นหา app ที่ชื่อ Developer Mode
  
  3. ติดตั้งแล้ว เปิด app
+
+ 4. login ด้วย email และ password ของ lg account
+ 
+ 5. เปิด Dev Mode Status เป็น on และ restart tv
  
  4. เปิด Key server เป็น on
  
- 5. เปิดหน้าจอนี้ทิ้งไว้แล้วไปหัวข้อถัดไป
+ 5. เปิดหน้าจอของ app นี้ทิ้งไว้แล้วไปหัวข้อถัดไป
 
 ### ติดตั้ง dev manager บน PC
  
@@ -96,6 +113,28 @@
  
  3. เปิดโปรแกรมมา กด Add device
  
- 4. กรอก host address และ Passphrase ที่แสดงบนจอ TV
+ 4. กรอก host address และ Passphrase ที่แสดงบนจอ TV และกดปุ่ม add (หากปุ่ม add กดไม่ได้ ให้ปิดเปิดแอพใหม่ ทั้ง tv และในคอม ทำซ้ำ จนกว่าจะได้ และเช็คให้แน่ใจว่า Key server บนทีวีได้เปิดแล้ว)
  
- 5. 
+ 5. มาที่หัวข้อ App แล้ว ไปที่ Tap Available แล้วหา app ชื่อ Moonlight แล้วกด Install
+
+ 6. จะเห็น app Moonlight ขึ้นมาบน TV เป็นอันเสร็จสิ้น
+
+### เชื่อมต่อ Moonlight เข้า Geforce experience
+ 
+ 1. เปิด Geforce experience กด setting (รูปเฟืองขวาบน)
+ 
+ 2. ไปที่ Tap SHIELD
+ 
+ 3. เปิด GAMESTREAM
+ 
+ 4. เปิด App Moonlight บน TV
+
+ 5. กด Add computer
+
+ 6. พิม IP ของ เครื่อง PC แล้วกด OK
+
+ 7. ชื่อ PC จะเด้ง ขึ้นมา
+
+ 8. ไปที่ Setting แล้วเลือก Tab Basic setting ตั้งค่า resolution กับ FPS ตามต้องการ (ขึ้นอยู่กับ TV และ ความแรง PC)
+
+ 9. เสร็จสิ้นเล่นเกมได้
